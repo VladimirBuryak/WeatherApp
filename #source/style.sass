@@ -1,0 +1,126 @@
+@import "./nullstyle.scss"
+
+/*--------color---------*/
+$color-one: #06283D
+$btn-back-color: #dff6ff
+
+/*---------------------*/
+body
+   display: grid
+   align-items: center
+   justify-content: center
+   background-color: $color-one
+.container
+   position: relative
+   width: 400px
+   height: 105px
+   background-color: #fff
+   padding: 28px 32px
+   overflow: hidden
+   border-radius: 18px
+   font-family: 'Roboto', sans-serif
+   transition: 0.6s ease-out
+.weather-search
+   width: 100%
+   height: min-content
+   display: flex
+   align-items: center
+   justify-content: space-between
+   input
+      color: $color-one
+      width: 80%
+      font-size: 1.5rem
+      font-weight: 500
+      text-transform: uppercase
+      padding-left: 32px
+   input::placeholder
+      font-size: 1.25rem
+      font-weight: 500
+      color: $color-one
+      text-transform: capitalize
+   button
+      width: 50px
+      height: 50px
+      color: $color-one
+      background-color: $btn-back-color
+      border-radius: 50%
+      font-size: 1.375rem
+      transition: .4s ease
+   button:hover
+      color: #fff
+      background: $color-one
+   i
+      position: absolute
+      color: $color-one
+      font-size: 28px
+.weather-item
+   text-align: center
+   img
+      width: 60%
+      margin-top: 30px
+.temperature
+   position: relative
+   color: $color-one
+   font-size: 4rem
+   font-weight: 800
+   margin-top: 30px
+   margin-left: -16px
+   span
+      position: absolute
+      margin-left: 4px
+      font-size: 1.5rem
+.description
+   color: $color-one
+   font-size: 1.375rem
+   font-weight: 500
+   text-transform: capitalize
+.weather-details
+   width: 100%
+   display: flex
+   justify-content: space-between
+   margin-top: 30px
+   .humidity
+      justify-content: flex-start
+   .wind
+      justify-content: flex-end
+   span
+      color: $color-one
+      font-size: 1.375rem
+      font-weight: 500
+   p
+      color: $color-one
+      font-size: 0.875rem
+      font-weight: 500
+   .humidity,.wind
+      display: flex
+      align-items: center
+      width: 50%
+      height: 100px
+   i
+      color: $color-one
+      font-size: 1.625rem
+      margin-right: 10px
+      margin-top: 6px
+.error-404
+   width: 100%
+   text-align: center
+   margin-top: 50px
+   scale: 0
+   opacity: 0
+   img
+      width: 70%
+   p
+      color: $color-one
+      font-size: 1.375rem
+      font-weight: 500
+      margin-top: 12px
+.weather-item,.weather-details
+   scale: 0
+   opacity: 0
+.open
+   animation: .5s fadeIn forwards
+   animation-delay: .5s
+@keyframes fadeIn
+   to
+      scale: 1
+      opacity: 1
